@@ -46,6 +46,7 @@ get_users_sei <- function(x) {
 # cprof$chromeOptions$args <- list("--allow-running-insecure-content", "--ignore-ssl-errors=yes", "--ignore-certificate-errors", "--disable-web-security", "--allow-insecure-localhost", "--unsafely-treat-insecure-origin-as-secure")
 
 ## Utilizando o Docker (local) do Selenium
+## https://grishagin.com/r/rselenium/2017/11/11/setup-rselenium-windows10.html#:~:text=%20How%20to%20Setup%20Environment%20for%20RSelenium%20on,R%20Session%20to%20Selenium%20Server.%20%20More%20
 
 remDr<-
   remoteDriver(remoteServerAddr = "192.168.99.100"
