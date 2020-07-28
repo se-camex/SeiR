@@ -28,7 +28,7 @@ get_users_sei <- function(x) {
     strsplit(" - |class")%>%
     purrr::map_dfr(function(x) tibble(user_sei=x[1], nome_sei=x[2])%>%
                      filter(!is.na(nome_sei)))%>%
-    arrange(nome)%>%mutate(unidade=unidade, id_sei=values, user_sei)
+    arrange(nome_sei)%>%mutate(unidade=unidade, id_sei=values, user_sei)
   names
 }
 
