@@ -47,6 +47,8 @@ get_users_sei <- function(x) {
 
 ## Utilizando o Docker (local) do Selenium
 ## https://grishagin.com/r/rselenium/2017/11/11/setup-rselenium-windows10.html#:~:text=%20How%20to%20Setup%20Environment%20for%20RSelenium%20on,R%20Session%20to%20Selenium%20Server.%20%20More%20
+## docker pull selenium/standalone-chrome-debug
+## docker run -d -p 5901:5900 -p 4445:4444 selenium/standalone-chrome-debug
 
 remDr<-
   remoteDriver(remoteServerAddr = "192.168.99.100"
